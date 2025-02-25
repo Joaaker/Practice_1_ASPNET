@@ -1,0 +1,15 @@
+﻿@page
+@model Practice_1.Pages.ProductsModel
+@{
+	ViewData["Title"] = "Produkter";
+}
+
+
+<div class="container">
+	<h1 class="text-bg-danger">Produkt sida</h1>
+</div>
+
+<div class="container">
+	@await Html.PartialAsync("Partials/_ProductPartial", Model.Products)
+</div>
+

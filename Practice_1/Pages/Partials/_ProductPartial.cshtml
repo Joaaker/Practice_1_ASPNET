@@ -1,0 +1,21 @@
+﻿@using Business.Models
+@model List<Product>
+
+<h1>JAG fungerar</h1>
+<div>
+	@foreach (var product in Model)
+	{
+		<div class="list-item">
+			Produkt id: @product.Id
+		</div>
+
+		<div class="list-item">
+			Produkt namn: @product.Name
+		</div>
+
+		<div class="list-item">
+			Produkt pris: @product.Price kr
+		</div>
+		
+	}
+</div>
